@@ -1,0 +1,205 @@
+body{
+    background-color:green;
+}
+/* nuestra carta creada */
+.carta{
+    position:absolute;
+    border: 2px black solid;
+    height: 200px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: rgb(221, 219, 219)
+}
+/*marco dentro de la carta */
+.relleno{
+    border:1px black solid;
+    height:160px;
+    width:80px;
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+/*empieza 4 de picas */
+#picas4{
+    top:40%;
+    left:500px;
+    z-index: 2;
+}
+.numeroPalo{
+    font-size:25px;
+}
+.numeroPalo_invertido{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.palo{
+    position:absolute;
+    top:20px;
+}
+.figura{
+    position: absolute;
+    font-size: 40px;
+}
+#picas_1{
+    left:10px;
+}
+#picas_2{
+    left:50px;
+}
+#picas_3{
+    left:15px;
+    top:110px;
+    transform: rotate(180deg);
+}
+#picas_4{
+    left:50px;
+    top:110px;
+    transform: rotate(180deg);
+}
+/* termina 4 de picas*/
+
+/*empieza 7 de treboles */
+#treboles7{
+    top:40%;
+    left:500px;
+    z-index: 4;
+}
+
+#treboles_1{
+    left:10px;
+}
+#treboles_2{
+    left:50px;
+}
+#treboles_3{
+    left:30px;
+    top:25px;
+}
+#treboles_4{
+    left:10px;
+    top:50px;
+}
+#treboles_5{
+    left:50px;
+    top:50px;
+}
+#treboles_6{
+    left:10px;
+    top:110px;
+    transform: rotate(180deg);
+}
+#treboles_7{
+    left:50px;
+    top:110px;
+    transform: rotate(180deg);
+}
+/* termina 7 de treboles*/
+
+/* empieza 6 de corazones*/
+#corazones6{
+    top:40%;
+    left:500px;
+    z-index: 3;
+}
+
+#corazones_1{
+    left:10px;
+}
+#corazones_2{
+    left:50px;
+}
+#corazones_3{
+    left:50px;
+    top:50px;
+}
+#corazones_4{
+    left:10px;
+    top:50px;
+}
+#corazones_5{
+    left:50px;
+    top:110px;
+    transform: rotate(180deg);
+}
+#corazones_6{
+    left:10px;
+    top:110px;
+    transform: rotate(180deg);
+}
+
+/* termina 6 de corazones*/
+
+/*poner rojo los palos y numeros */
+#rojo{
+    color: red;
+}
+
+/* empieza A de diamantes*/
+#diamantesA{
+    top:40%;
+    left:500px;
+    z-index: 1;
+}
+
+#diamantes_1{
+    left:20px;
+    top:30px;
+    font-size:80px;
+}
+/* termina A de diamantes*/
+
+
+/* animacion */
+
+@keyframes animacion_treboles7{
+    100%{
+        left:500px;
+        transform:rotate(30deg);
+    }
+}
+#treboles7{
+    animation-name: animacion_treboles7;
+    animation-duration:1s;
+    animation-delay:1s;
+    animation-iteration-count: 7;
+}
+@keyframes animacion_corazones6{
+    100%{
+        left:480px;
+        transform:rotate(20deg);
+    }
+}
+#corazones6{
+    animation-name: animacion_corazones6;
+    animation-duration:1s;
+    animation-delay:1s;
+    animation-iteration-count: 7;
+}
+
+@keyframes animacion_picas4{
+    100%{
+        left:460px;
+        transform:rotate(10deg);
+    }
+}
+#picas4{
+    animation-name: animacion_picas4;
+    animation-duration:1s;
+    animation-delay:1s;
+    animation-iteration-count: 7;
+}
+
+@keyframes animacion_diamantesA{
+    100%{
+        left:440px;
+        transform:rotate(-10deg);
+    }
+}
+#diamantesA{
+    animation-name: animacion_diamantesA;
+    animation-duration:1s;
+    animation-delay:1s;
+    animation-iteration-count: 7;
+}
